@@ -199,6 +199,16 @@ print(split_list)
 
 ```
 
+## Working with String
+
+The below techniques do not mutate the original variable.
+
+`variable[0]` Grabs the first letter in the string
+
+`variable[-1]` Grabs the last element in the string
+
+`Variable[0:3]` Slices the string from index 0 to index 3 (exclusive) so 0-2 is grabbed.
+
 # and | or | not ----------------------------------------------------------
 
 ```py
