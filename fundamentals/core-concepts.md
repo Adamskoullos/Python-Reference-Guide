@@ -216,3 +216,46 @@ result_three = not(result_two)
 ```
 
 # Truthy | Falsy ----------------------------------------------------
+
+```py
+print(bool(variable))
+
+```
+
+# Identity Operators
+
+```py
+a=1
+b=1.0
+print(a==b)
+print(a is b)
+print(id(a))
+print(id(b))
+# a and b have the same numeric value but a different type
+c=b
+print(b==c)
+print(b is c)
+print(id(b))
+print(id(c))
+# b and c are equal in value and identity
+
+
+True
+False
+9784896
+140094029824688
+True
+True
+140094029824688
+140094029824688
+
+```
+
+# Containment operator
+
+```py
+print('Program' in 'Programming')
+print('spam' in ['spam', 'egg'])
+print('sausage' not in ['spam', 'egg'])
+
+```
