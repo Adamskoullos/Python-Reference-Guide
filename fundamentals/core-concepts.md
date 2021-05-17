@@ -269,3 +269,37 @@ print('spam' in ['spam', 'egg'])
 print('sausage' not in ['spam', 'egg'])
 
 ```
+
+# conditional
+
+```py
+number = int(input("Please enter a number:"))
+
+if number == 5:
+    print(f"{number} is equal to 5")
+else:
+    print(f"{number} is not equal to 5")
+
+# -------------------------------------------------------
+
+a = 10
+b = 20
+result = None
+
+if a == b:
+    result = 'a has the same value as b'
+else:
+    result = 'a has not got the same value as b'
+
+print(result);
+
+
+# Ternary Boolean ---------------------------------------
+
+my_boolean = False
+
+my_string = "Hello" if my_boolean else "World"
+
+```
+
+![fizzBuzz](https://user-images.githubusercontent.com/73107656/118421205-9087f900-b6b8-11eb-9dbc-693dccec4849.png)
