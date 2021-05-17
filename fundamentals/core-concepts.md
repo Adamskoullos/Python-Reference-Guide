@@ -303,3 +303,107 @@ my_string = "Hello" if my_boolean else "World"
 ```
 
 ![fizzBuzz](https://user-images.githubusercontent.com/73107656/118421205-9087f900-b6b8-11eb-9dbc-693dccec4849.png)
+
+# if / elif ------------------------------------------------------------------
+
+```py
+
+day = 'Friday'
+
+if day == 'Monday':
+    print('Meeting at 9:00')
+elif day == 'Wednesday':
+    print('Meeting at 2:00')
+elif day == 'Friday':
+    print('Meeting at 4:00')
+else:
+    print('No meetings today')
+
+
+#  Nested
+
+exit_program = True
+manual_override = False
+critical_systems_shutdown = False
+
+if not exit_program and not critical_systems_shutdown:
+    if manual_override:
+        print("Shutting system down manually")
+    else:
+        print("This program will not exit just yet")
+elif exit_program and critical_systems_shutdown is not True:
+    print("Critical systems must be safely shut down before exiting the program")
+else:
+    print("This program will now be terminated...")
+
+```
+
+# Iteration ------------------------------------------------------------
+
+Can use a standard for loop to loop through **lists** and **strings**
+
+```py
+languages = ["HTML", "CSS", "JavaScript"]
+for language in languages:
+  print(language)
+
+
+for character in "Python":
+  print(character)
+
+```
+
+## Range(start, stop, increment) -------------------------------------------------------
+
+**Start** index from inclusive
+
+**Stop** index to exclusive
+
+Can use variables to make this a dynamic loop
+
+```py
+
+for i in range(1,5,1):
+
+# Looping through the index using the list length -----------------------
+
+foods = ['bacon', 'sausage', 'egg', 'spam']
+
+for ind in range(len(foods)):
+	# In this example only the index is iterated over not the value
+    print(ind, foods[ind])
+
+0 bacon
+1 sausage
+2 egg
+3 spam
+
+```
+
+<img src="https://user-images.githubusercontent.com/73107656/118469668-d4512180-b6fd-11eb-9c83-17eafa7ca8c4.png" width="50%" style="margin-left: 25%">
+
+The above is an example of mutating the original list.
+
+## While loop ---------------------------------------------------------------------
+
+```py
+play_game = True
+
+while play_game:
+    continue_playing = input("Would you like to continue playing the game? y/n ")
+
+    if continue_playing.lower() == "y":
+        print("You have decided to continue playing the game.")
+    elif continue_playing.lower() == "n":
+        print("Now closing the game...")
+        play_game = False
+    else:
+        print("That is not a valid option. Please try again.")
+
+print("Thanks for playing")
+
+```
+
+## Break - Continue - Pass ------------------------------------------------------
+
+Continue skips the code for that iteration and continues the loop
